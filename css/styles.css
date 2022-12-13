@@ -99,6 +99,10 @@ span {
 }
 
 /* -----AUTORIZATION-LINKS----- */
+.address {
+    margin-left: auto;
+}
+
 .autorization-list {
     display: flex;
 }

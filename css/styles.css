@@ -16,10 +16,10 @@
 
 .container {
     width: 1158px;
-    padding: 0 20px;
+    padding: 0 15px;
     margin: 0 auto;
     text-align: center;
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 }
       
 h1,
@@ -27,6 +27,10 @@ h2,
 h3,
 p {
     margin: 0;
+}
+
+img {
+    display: block;
 }
 
 body {
@@ -44,13 +48,17 @@ body {
 }
 
 /* -----LOGO----- */
+.header {
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 .header-pages {
     display: flex;
     align-items: center;
 }
 
 .logo {
-    padding: 24px 0;
+    padding: 0;
     margin-right: 77px;
 
     font-family: var(--font-secondary);
@@ -69,7 +77,7 @@ span {
 /* -----PAGES-MENU----- */
 .pages-list {
     display: flex;
-    margin: 0;
+    margin: 24px 0;
     padding: 0;
 }
 
@@ -80,8 +88,6 @@ span {
 
 .pages-link {
     display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
 
     font-family: var(--font-main);
     font-weight: 500;
@@ -100,11 +106,17 @@ span {
 
 /* -----AUTORIZATION-LINKS----- */
 .address {
+    display: flex;
     margin-left: auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .autorization-list {
     display: flex;
+   padding: 0;
+    margin: 0;
+    padding-left: 0;
 }
 
 .autorization-list>.item:not(:last-child) {
@@ -112,9 +124,7 @@ span {
 }
 
 .autorization-link {
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    display: inline-block;
 
     font-family: var(--font-main);
     font-weight: 400;
@@ -134,9 +144,13 @@ span {
 /* -----HERO----- */
 .hero {
     background-color: var(--main-color);
+    text-align: center;
 }
 
 .hero-title {
+    padding-top: 192px;
+    margin-bottom: 48px;
+
     font-family: var(--font-main);
     font-weight: 500;
     font-size: 56px;
@@ -145,7 +159,15 @@ span {
     color: #FFFFFF;
 }
 
+.div-hero-btn {
+    padding-bottom: 192px;
+}
+
 .hero-btn {
+    display: inline-block;
+    padding: 16px 32px;
+    margin: 0;
+
     font-family: var(--font-main);
     font-weight: 500;
     font-size: 16px;
@@ -162,7 +184,21 @@ span {
 }
 
 /* -----PARAGRAPHS----- */
+
+.paragraphs-list {
+    display: flex;
+    margin: 0;
+    padding: 120px 0;
+}
+
+.paragraphs-item:not(:last-child) {
+    margin-right: 24px;
+}
+
 .paragraphs-title {
+    text-align: start;
+    margin-bottom: 8px;
+
     font-family: var(--font-main);
     font-weight: 500;
     font-size: 20px;
@@ -172,6 +208,10 @@ span {
 }
 
 .paragraphs-text {
+    text-align: start;
+    padding: 0;
+    width: 264px;
+
     font-family: var(--font-main);
     font-weight: 400;
     font-size: 16px;
@@ -182,6 +222,8 @@ span {
 
 /* -----EXAMPLES----- */
 .examples-title {
+    margin-bottom: 72px;
+
     font-family: var(--font-main);
     font-weight: 700;
     font-size: 36px;
@@ -189,12 +231,30 @@ span {
     letter-spacing: 0.02em;
     color: var(--main-color);
 }
+
+.examples-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 120px;
+}
+
+.examples-item:not(:last-child) {
+    margin-right: 24px;
+}
+
+.examples-item > img {
+    border: 1px solid #E7E9FC;
+}
+
 /* -----TEAM----- */
 .team {
     background-color: #F4F4FD;
 }
 
 .team-title {
+    padding-top: 120px;
+    margin-bottom: 72px;
     font-family: var(--font-main);
     font-weight: 700;
     font-size: 36px;
@@ -203,7 +263,26 @@ span {
     color: var(--main-color);
 }
 
+.team-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 120px;
+}
+
+.team-item {
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-item:not(:last-child) {
+    margin-right: 24px;
+}
 .name {
+    margin-top: 32px;
+    margin-bottom: 8px;
+
     font-family: var(--font-main);
     font-weight: 500;
     font-size: 20px;
@@ -213,6 +292,8 @@ span {
 }
 
 .position {
+    margin-bottom: 32px;
+
     font-family: var(--font-main);
     font-weight: 400;
     font-size: 16px;
@@ -222,11 +303,19 @@ span {
 }
 
 /* -----FOOTER----- */
+.footer-pages {
+    text-align: start;
+}
+
 .footer {
     background-color: var(--main-color);
 }
 
 .footer-logo {
+    display: block;
+    padding-top: 100px;
+    margin-bottom: 16px;
+
     font-family: var(--font-secondary);
     font-weight: 700;
     font-size: 18px;
@@ -236,7 +325,10 @@ span {
     text-decoration: none;
 }
 /* -----LOGO----- */
+
 .logo-text {
+    padding-bottom: 100px;
+
     font-family: var(--font-main);
     font-weight: 400;
     font-size: 16px;
@@ -247,7 +339,17 @@ span {
 
                                         /* -----PORTFOLIO----- */
 /* -----BUTTONS----- */
+.btn-list {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 96px 0 72px;
+}
+
 .btn-item {
+    padding: 12px 24px;
+    margin-right: 24px;
+    display: inline-block;
     font-family: var(--font-main);
     font-weight:500;
     font-size: 16px;
@@ -256,6 +358,27 @@ span {
     color: #4D5AE5;
     background-color: #F4F4FD;
     cursor: pointer;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+}
+
+.btn-item:last-child {
+    margin-right: 0;
+}
+
+.btn-link {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-main);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #4D5AE5;
+    background-color: #F4F4FD;
+    cursor: pointer;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
 }
 
 .btn-item:hover,
@@ -266,7 +389,28 @@ span {
 
 /* -----PICTURES----- */
 
+.pictures-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 120px;
+    row-gap: 48px;
+    column-gap: 24px;
+}
+
+.porfolio-description {
+    text-align: start;
+    padding-left: 16px;
+
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .pictures-title {
+    padding-top: 32px;
+    padding-bottom: 8px;
+
     font-family: var(--font-main);
     font-weight: 500;
     font-size: 20px;
@@ -276,6 +420,8 @@ span {
 }
 
 .pictures-type {
+    margin-bottom: 32px;
+
     font-family: var(--font-main);
     font-weight: 400;
     font-size: 16px;

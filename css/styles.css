@@ -14,6 +14,10 @@
     box-sizing: border-box;
 }
 
+.section {
+    padding: 120px 0;
+}
+
 .container {
     width: 1158px;
     padding: 0 15px;
@@ -53,6 +57,7 @@ body {
 }
 
 .header-pages {
+    padding: 24px 0;
     display: flex;
     align-items: center;
 }
@@ -77,7 +82,7 @@ span {
 /* -----PAGES-MENU----- */
 .pages-list {
     display: flex;
-    margin: 24px 0;
+    /* margin: 24px 0; */
     padding: 0;
 }
 
@@ -108,13 +113,13 @@ span {
 .address {
     display: flex;
     margin-left: auto;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    /* padding-top: 24px;
+    padding-bottom: 24px; */
 }
 
 .autorization-list {
     display: flex;
-   padding: 0;
+    padding: 0;
     margin: 0;
     padding-left: 0;
 }
@@ -145,10 +150,10 @@ span {
 .hero {
     background-color: var(--main-color);
     text-align: center;
+    padding: 192px 0;
 }
 
 .hero-title {
-    padding-top: 192px;
     margin-bottom: 48px;
 
     font-family: var(--font-main);
@@ -157,10 +162,6 @@ span {
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-}
-
-.div-hero-btn {
-    padding-bottom: 192px;
 }
 
 .hero-btn {
@@ -188,7 +189,6 @@ span {
 .paragraphs-list {
     display: flex;
     margin: 0;
-    padding: 120px 0;
 }
 
 .paragraphs-item:not(:last-child) {
@@ -221,6 +221,10 @@ span {
 }
 
 /* -----EXAMPLES----- */
+.examples {
+    padding-top: 0;
+}
+
 .examples-title {
     margin-bottom: 72px;
 
@@ -236,7 +240,6 @@ span {
     display: flex;
     padding: 0;
     margin: 0;
-    padding-bottom: 120px;
 }
 
 .examples-item:not(:last-child) {
@@ -253,7 +256,6 @@ span {
 }
 
 .team-title {
-    padding-top: 120px;
     margin-bottom: 72px;
     font-family: var(--font-main);
     font-weight: 700;
@@ -267,7 +269,6 @@ span {
     display: flex;
     padding: 0;
     margin: 0;
-    padding-bottom: 120px;
 }
 
 .team-item {
@@ -309,11 +310,11 @@ span {
 
 .footer {
     background-color: var(--main-color);
+    padding: 100px 0;
 }
 
 .footer-logo {
     display: block;
-    padding-top: 100px;
     margin-bottom: 16px;
 
     font-family: var(--font-secondary);
@@ -327,8 +328,6 @@ span {
 /* -----LOGO----- */
 
 .logo-text {
-    padding-bottom: 100px;
-
     font-family: var(--font-main);
     font-weight: 400;
     font-size: 16px;
@@ -339,11 +338,14 @@ span {
 
                                         /* -----PORTFOLIO----- */
 /* -----BUTTONS----- */
+.main-portfolio {
+    padding-top: 96px;
+}
+
 .btn-list {
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 96px 0 72px;
+    margin: 0 0 72px;
 }
 
 .btn-item {
@@ -379,7 +381,6 @@ span {
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    padding-bottom: 120px;
     row-gap: 48px;
     column-gap: 24px;
 }
